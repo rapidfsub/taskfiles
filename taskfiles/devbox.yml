@@ -1,0 +1,6 @@
+version: '3'
+
+tasks:
+  pull:
+    cmds:
+      - devbox global pull ./devbox.json -f
