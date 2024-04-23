@@ -1,0 +1,8 @@
+*
+!*/
+!.gitignore
+
+!chezmoi/chezmoi.json
+!git/config
+!karabiner/karabiner.json
+!linearmouse/linearmouse.json

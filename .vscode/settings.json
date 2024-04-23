@@ -1,0 +1,47 @@
+{
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[phoenix-heex]": {
+    "editor.defaultFormatter": "JakeBecker.elixir-ls"
+  },
+  "editor.detectIndentation": false,
+  "editor.fontFamily": "'FantasqueSansM Nerd Font Mono', D2Coding, Menlo, Monaco, 'Courier New', monospace",
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.minimap.enabled": false,
+  "editor.quickSuggestionsDelay": 500,
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": false,
+  "elixirLS.autoInsertRequiredAlias": false,
+  "elixirLS.suggestSpecs": false,
+  "emmet.includeLanguages": {
+    "elixir": "html",
+    "phoenix-heex": "html"
+  },
+  "files.associations": {
+    "*.heex": "phoenix-heex"
+  },
+  "files.autoSave": "onFocusChange",
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.saveConflictResolution": "overwriteFileOnDisk",
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "git.openRepositoryInParentFolders": "always",
+  "html.format.extraLiners": "",
+  "html.format.indentInnerHtml": true,
+  "html.format.maxPreserveNewLines": 1,
+  "html.format.preserveNewLines": true,
+  "terminal.integrated.scrollback": 10000000
+}
