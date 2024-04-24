@@ -10,6 +10,6 @@ tasks:
   init-config:
     cmds:
       - mkdir -p ~/.config
-      - cp -rf .home/.config/chezmoi ~/.config/chezmoi
+      - cp -rf .config/chezmoi ~/.config/chezmoi
     status:
       - test -d ~/.config/chezmoi
