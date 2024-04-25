@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 includes:
   brew: ./taskfiles/brew.yml
@@ -6,3 +6,4 @@ includes:
   devbox: ./taskfiles/devbox.yml
   install: ./taskfiles/install.yml
   mise: ./taskfiles/mise.yml
+  vscode: ./taskfiles/vscode.yml
