@@ -2,8 +2,10 @@
 !*/
 !.gitignore
 
-!chezmoi/chezmoi.json
 !git/config
 !git/devall.inc
+
+!chezmoi/chezmoi.json
 !karabiner/karabiner.json
 !linearmouse/linearmouse.json
+!starship.toml
