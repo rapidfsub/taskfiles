@@ -4,5 +4,6 @@
 
 !chezmoi/chezmoi.json
 !git/config
+!git/devall.inc
 !karabiner/karabiner.json
 !linearmouse/linearmouse.json

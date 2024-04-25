@@ -2,3 +2,6 @@
   name = Minsub Kim
   email = rapidfsub@gmail.com
   username = rapidfsub
+
+[includeIf "gitdir:~/devall/"]
+    path = ./devall.inc
