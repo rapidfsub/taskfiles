@@ -6,3 +6,11 @@ tasks:
       - /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     status:
       - command -v brew
+
+  command-line-tools:
+    cmds:
+      - xcode-select --install
+
+  rosetta:
+    cmds:
+      - softwareupdate --install-rosetta
