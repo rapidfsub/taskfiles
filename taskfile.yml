@@ -5,3 +5,4 @@ includes:
   chezmoi: ./taskfiles/chezmoi.yml
   devbox: ./taskfiles/devbox.yml
   install: ./taskfiles/install.yml
+  mise: ./taskfiles/mise.yml

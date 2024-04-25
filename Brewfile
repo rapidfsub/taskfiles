@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
+brew "erlang"
 cask "arc", args: { appdir: "~/Applications" }
 cask "brave-browser", args: { appdir: "~/Applications" }
 cask "bruno", args: { appdir: "~/Applications" }
