@@ -18,6 +18,7 @@ cask "logseq", args: { appdir: "~/Applications" }
 cask "macs-fan-control", args: { appdir: "~/Applications" }
 cask "notion", args: { appdir: "~/Applications" }
 cask "obsidian", args: { appdir: "~/Applications" }
+cask "postgres-unofficial", args: { appdir: "~/Applications" }
 cask "rectangle", args: { appdir: "~/Applications" }
 cask "setapp", args: { appdir: "~/Applications" }
 cask "visual-studio-code", args: { appdir: "~/Applications" }
