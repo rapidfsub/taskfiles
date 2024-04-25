@@ -3,12 +3,18 @@ version: '3'
 tasks:
   bundle:
     cmds:
-      - brew bundle --cleanup --cask --tap --no-lock --zap
+      - brew bundle --cleanup --formula --cask --tap --no-lock --zap
 
   dump:
     cmds:
-      - brew bundle dump --force --cask --tap --no-lock
+      - brew bundle dump --force --formula --cask --tap --no-lock
+
+  install:
+    cmds:
+      - brew install --formula {{.CLI_ARGS}}
+      - task: dump
 
   install-cask:
     cmds:
       - brew install --cask --appdir=~/Applications {{.CLI_ARGS}}
+      - task: dump
