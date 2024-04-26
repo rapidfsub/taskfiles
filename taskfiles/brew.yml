@@ -3,7 +3,8 @@ version: "3"
 tasks:
   bundle:
     cmds:
-      - brew bundle --cleanup --formula --cask --tap --no-lock --zap
+      - eval "$(/opt/homebrew/bin/brew shellenv)" &&
+        brew bundle --cleanup --formula --cask --tap --no-lock --zap
 
   dump:
     cmds:
