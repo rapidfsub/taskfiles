@@ -4,3 +4,8 @@ tasks:
   pull:
     cmds:
       - devbox global pull ./devbox.json -f
+
+  add:
+    cmds:
+      - devbox add {{.CLI_ARGS}}
+      - task: pull
