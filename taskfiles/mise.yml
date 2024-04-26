@@ -1,0 +1,8 @@
+version: "3"
+
+tasks:
+  install:
+    cmds:
+      - mise install -y java
+      - mise install -y erlang
+      - mise install -y

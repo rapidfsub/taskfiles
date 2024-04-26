@@ -1,0 +1,15 @@
+version: "3"
+
+tasks:
+  apply:
+    deps:
+      - init-config
+    cmds:
+      - chezmoi apply
+
+  init-config:
+    cmds:
+      - mkdir -p ~/.config
+      - cp -rf .config/chezmoi ~/.config/chezmoi
+    status:
+      - test -d ~/.config/chezmoi

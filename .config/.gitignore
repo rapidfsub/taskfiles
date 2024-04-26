@@ -1,0 +1,16 @@
+*
+!*/
+!.gitignore
+
+!starship.toml
+
+!chezmoi/chezmoi.json
+!karabiner/karabiner.json
+!kitty/kitty.conf
+!linearmouse/linearmouse.json
+
+!git/config
+!git/devall.inc
+
+!zsh/.zprofile
+!zsh/.zshrc

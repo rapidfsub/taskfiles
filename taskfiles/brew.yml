@@ -1,0 +1,21 @@
+version: "3"
+
+tasks:
+  bundle:
+    cmds:
+      - brew bundle --cleanup --formula --cask --tap --no-lock --zap
+
+  dump:
+    cmds:
+      - brew bundle dump --force --formula --cask --tap --no-lock
+      - 'sd -F ''{ appdir: "~/Applications" }'' ''{ appdir: "~/Applications", no_quarantine: true }'' Brewfile'
+
+  install:
+    cmds:
+      - brew install --formula {{.CLI_ARGS}}
+      - task: dump
+
+  install-cask:
+    cmds:
+      - brew install --cask --appdir=~/Applications {{.CLI_ARGS}}
+      - task: dump

@@ -1,0 +1,7 @@
+version: "3"
+
+tasks:
+  ext:
+    cmds:
+      - rm -rf ~/.vscode/extensions
+      - cat ./extensions.txt | xargs -L1 code --install-extension
