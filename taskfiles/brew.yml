@@ -8,6 +8,7 @@ tasks:
   dump:
     cmds:
       - brew bundle dump --force --formula --cask --tap --no-lock
+      - 'sd -F ''{ appdir: "~/Applications" }'' ''{ appdir: "~/Applications", no_quarantine: true }'' Brewfile'
 
   install:
     cmds:
