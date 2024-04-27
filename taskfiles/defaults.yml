@@ -5,32 +5,55 @@ tasks:
     cmds:
       - mkdir -p defaults/com.apple.LaunchServices
       - mkdir -p defaults/checksum/com.apple.LaunchServices
+      - mkdir -p defaults/ByHost
+      - mkdir -p defaults/checksum/ByHost
     run: once
 
   dump:
     requires:
-      vars: [DOMAIN]
+      vars: [DOMAIN, SUPDOMAIN, DIR, FLAGS]
     label: defaults:dump-{{ .DOMAIN }}
     deps:
       - mkdir
     cmds:
-      - defaults export {{ .DOMAIN }} - > defaults/{{ .DOMAIN }}.plist
-      - cat defaults/{{ .DOMAIN }}.plist | md5sum > defaults/checksum/{{ .DOMAIN }}.md5
+      - defaults {{ .FLAGS }} export {{ .FULL_DOMAIN }} - > {{ .PATH }}
+      - cat {{ .PATH }} | md5sum > {{ .CSUM }}
     status:
-      - test -f defaults/checksum/{{ .DOMAIN }}.md5 &&
-        diff defaults/checksum/{{ .DOMAIN }}.md5 <(defaults export {{ .DOMAIN }} - | md5sum)
+      - test -f {{ .CSUM }} && diff {{ .CSUM }} <(defaults {{ .FLAGS }} export {{ .FULL_DOMAIN }} - | md5sum)
+    vars:
+      FULL_DOMAIN: "{{ joinPath .SUPDOMAIN .DOMAIN }}"
+      PATH: "defaults/{{ joinPath .DIR .DOMAIN }}.plist"
+      CSUM: "defaults/checksum/{{ joinPath .DIR .DOMAIN }}.md5"
 
   dump-all:
     aliases: [da]
     cmds:
       - for: { var: DOMAIN, split: ", " }
         task: dump
-        vars: { DOMAIN: "{{ .ITEM }}" }
+        vars:
+          DOMAIN: "{{ .ITEM }}"
+          SUPDOMAIN: ""
+          DIR: ""
+          FLAGS: ""
+      - for: { var: CURRENT_HOST, split: ", " }
+        task: dump
+        vars:
+          DOMAIN: "{{ .ITEM }}"
+          SUPDOMAIN: ""
+          DIR: ByHost
+          FLAGS: "-currentHost"
       - for: { var: LAUNCH_SERVICE, split: "\n" }
         task: dump
-        vars: { DOMAIN: "com.apple.LaunchServices/{{ .ITEM }}" }
+        vars:
+          DOMAIN: "{{ .ITEM }}"
+          SUPDOMAIN: com.apple.LaunchServices
+          DIR: com.apple.LaunchServices
+          FLAGS: ""
+
     vars:
       DOMAIN:
         sh: defaults domains
+      CURRENT_HOST:
+        sh: defaults -currentHost domains
       LAUNCH_SERVICE:
         sh: ls -1 ~/Library/Preferences/com.apple.LaunchServices | grep .plist | sd .plist ''
