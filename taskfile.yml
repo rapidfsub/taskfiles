@@ -18,5 +18,4 @@ tasks:
       - task: chezmoi:apply
       - task: install:brew
       - task: brew:bundle
-      - task: vscode:ext
       - task: mise:install
