@@ -1,0 +1,23 @@
+version: "3"
+
+tasks:
+  dump:
+    requires:
+      vars: [DOMAIN]
+    label: defaults:dump-{{ .DOMAIN }}
+    cmds:
+      - defaults export {{ .DOMAIN }} - > defaults/{{ .DOMAIN }}.plist
+      - cat defaults/{{ .DOMAIN }}.plist | md5sum > defaults/checksum/{{ .DOMAIN }}.md5
+    status:
+      - test -f defaults/checksum/{{ .DOMAIN }}.md5 &&
+        diff defaults/checksum/{{ .DOMAIN }}.md5 <(defaults export {{ .DOMAIN }} - | md5sum)
+
+  dump-all:
+    aliases: [da]
+    cmds:
+      - for: { var: DOMAIN, split: ", " }
+        task: dump
+        vars: { DOMAIN: "{{ .ITEM }}" }
+    vars:
+      DOMAIN:
+        sh: defaults domains

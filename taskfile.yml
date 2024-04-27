@@ -3,7 +3,20 @@ version: "3"
 includes:
   brew: ./taskfiles/brew.yml
   chezmoi: ./taskfiles/chezmoi.yml
+  defaults: ./taskfiles/defaults.yml
   devbox: ./taskfiles/devbox.yml
   install: ./taskfiles/install.yml
   mise: ./taskfiles/mise.yml
   vscode: ./taskfiles/vscode.yml
+
+tasks:
+  setup:
+    deps:
+      - install:rosetta
+      - devbox:pull
+    cmds:
+      - task: chezmoi:apply
+      - task: install:brew
+      - task: brew:bundle
+      - task: vscode:ext
+      - task: mise:install

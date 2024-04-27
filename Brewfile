@@ -1,6 +1,7 @@
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 brew "erlang"
+cask "aldente", args: { appdir: "~/Applications", no_quarantine: true }
 cask "arc", args: { appdir: "~/Applications", no_quarantine: true }
 cask "brave-browser", args: { appdir: "~/Applications", no_quarantine: true }
 cask "bruno", args: { appdir: "~/Applications", no_quarantine: true }

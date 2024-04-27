@@ -5,7 +5,7 @@ tasks:
     deps:
       - init-config
     cmds:
-      - chezmoi apply
+      - chezmoi apply --force
 
   init-config:
     cmds:
