@@ -49,7 +49,6 @@ tasks:
           SUPDOMAIN: com.apple.LaunchServices
           DIR: com.apple.LaunchServices
           FLAGS: ""
-
     vars:
       DOMAIN:
         sh: defaults domains
@@ -57,3 +56,24 @@ tasks:
         sh: defaults -currentHost domains
       LAUNCH_SERVICE:
         sh: ls -1 ~/Library/Preferences/com.apple.LaunchServices | grep .plist | sd .plist ''
+
+  import:
+    requires:
+      vars: [DOMAIN, SUPDOMAIN, DIR, FLAGS]
+    label: defaults:dump-{{ .DOMAIN }}
+    cmds:
+      - defaults {{ .FLAGS }} import {{ .FULL_DOMAIN }} {{ .PATH }}
+    vars:
+      FULL_DOMAIN: "{{ joinPath .SUPDOMAIN .DOMAIN }}"
+      PATH: "defaults/{{ joinPath .DIR .DOMAIN }}.plist"
+
+  import-all:
+    aliases: [ia]
+    cmds:
+      - for: [com.apple.launchservices.secure]
+        task: import
+        vars:
+          DOMAIN: "{{ .ITEM }}"
+          SUPDOMAIN: com.apple.LaunchServices
+          DIR: com.apple.LaunchServices
+          FLAGS: ""
