@@ -19,3 +19,4 @@ tasks:
       - task: install:brew
       - task: brew:bundle
       - task: mise:install
+      - task: defaults:ia
