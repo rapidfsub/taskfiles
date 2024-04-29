@@ -6,6 +6,7 @@ eval "$(mise activate zsh)"
 eval "$(starship init zsh)"
 
 alias asdf=mise
+alias cat=bat
 alias ls=eza
 alias ll="ls -al"
 alias lg=lazygit

@@ -17,7 +17,8 @@
     "git-delete-merged-branches@latest",
     "rar@latest",
     "ripgrep@latest",
-    "typos@latest"
+    "typos@latest",
+    "bat@latest"
   ],
   "shell": {
     "init_hook": [
