@@ -77,3 +77,23 @@ tasks:
           SUPDOMAIN: com.apple.LaunchServices
           DIR: com.apple.LaunchServices
           FLAGS: ""
+
+  # https://macos-defaults.com
+  setup:
+    cmds:
+      - defaults write com.apple.dock "orientation" -string "left"
+      - defaults write com.apple.dock "tilesize" -int "48"
+      - defaults write com.apple.dock "show-recents" -bool "false"
+      - defaults write com.apple.dock "static-only" -bool "true"
+      - defaults write com.apple.dock "mru-spaces" -bool "false"
+      - killall Dock
+      - defaults write com.apple.finder "AppleShowAllFiles" -bool "true"
+      - defaults write com.apple.finder "ShowPathbar" -bool "true"
+      - defaults write com.apple.finder "FXPreferredViewStyle" -string "clmv"
+      - defaults write com.apple.finder "FXEnableExtensionChangeWarning" -bool "false"
+      - defaults write NSGlobalDomain "NSDocumentSaveNewDocumentsToCloud" -bool "false"
+      - killall Finder
+      - defaults write com.apple.menuextra.clock "DateFormat" -string "\"EEE d MMM HH:mm:ss\""
+      - defaults write com.apple.AppleMultitouchTrackpad "TrackpadThreeFingerDrag" -bool "true"
+      - defaults write com.apple.HIToolbox AppleFnUsageType -int "1"
+      - defaults write NSGlobalDomain com.apple.keyboard.fnState -bool true
