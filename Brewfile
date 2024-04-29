@@ -1,7 +1,9 @@
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
+tap "nikitabobko/tap"
 brew "bitwarden-cli"
 brew "erlang"
+cask "aerospace", args: { appdir: "~/Applications", no_quarantine: true }
 cask "aldente", args: { appdir: "~/Applications", no_quarantine: true }
 cask "arc", args: { appdir: "~/Applications", no_quarantine: true }
 cask "brave-browser", args: { appdir: "~/Applications", no_quarantine: true }
