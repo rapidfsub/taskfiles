@@ -18,7 +18,8 @@
     "rar@latest",
     "ripgrep@latest",
     "typos@latest",
-    "bat@latest"
+    "bat@latest",
+    "exercism@latest"
   ],
   "shell": {
     "init_hook": [
