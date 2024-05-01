@@ -19,7 +19,8 @@
     "ripgrep@latest",
     "typos@latest",
     "bat@latest",
-    "exercism@latest"
+    "exercism@latest",
+    "flyctl@latest"
   ],
   "shell": {
     "init_hook": [

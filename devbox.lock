@@ -309,6 +309,54 @@
         }
       }
     },
+    "flyctl@latest": {
+      "last_modified": "2024-04-26T22:17:36-04:00",
+      "resolved": "github:NixOS/nixpkgs/698fd43e541a6b8685ed408aaf7a63561018f9f8#flyctl",
+      "source": "devbox-search",
+      "version": "0.2.40",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/dyash44p0hpj5zz2x3v48550akfafjar-flyctl-0.2.40",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/dyash44p0hpj5zz2x3v48550akfafjar-flyctl-0.2.40"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/c87596i7srwy424yc3yg0wg156gnx09y-flyctl-0.2.40",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/c87596i7srwy424yc3yg0wg156gnx09y-flyctl-0.2.40"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/iqav6ygg4m0vx1hmyxs6bd0mm4jabvh3-flyctl-0.2.40",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/iqav6ygg4m0vx1hmyxs6bd0mm4jabvh3-flyctl-0.2.40"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/f4b3hw5wxpcsknfva5wqf7p740sa40py-flyctl-0.2.40",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/f4b3hw5wxpcsknfva5wqf7p740sa40py-flyctl-0.2.40"
+        }
+      }
+    },
     "fop@latest": {
       "last_modified": "2024-04-19T17:36:04-04:00",
       "resolved": "github:NixOS/nixpkgs/92d295f588631b0db2da509f381b4fb1e74173c5#fop",
