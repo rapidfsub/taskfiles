@@ -7,16 +7,18 @@ tasks:
       - mise u -g {{ .PLUGIN }}
 
   install:
+    aliases: [i]
     cmds:
       - for:
           - java@openjdk-22.0.1
-          - nodejs@18.17.1
-          - python@3.9.19
         task: use-global
         vars: { PLUGIN: "{{ .ITEM }}" }
       - task: install-erlang
       - for:
           - elixir@1.16.0-otp-26
+          - nodejs@18.17.1
+          - python@3.9.19
+          - zig@0.12.0
         task: use-global
         vars: { PLUGIN: "{{ .ITEM }}" }
 
