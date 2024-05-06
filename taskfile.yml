@@ -5,6 +5,7 @@ includes:
   chezmoi: ./taskfiles/chezmoi.yml
   defaults: ./taskfiles/defaults.yml
   devbox: ./taskfiles/devbox.yml
+  git: ./taskfiles/git.yml
   install: ./taskfiles/install.yml
   mise: ./taskfiles/mise.yml
   vscode: ./taskfiles/vscode.yml
@@ -18,5 +19,20 @@ tasks:
       - task: chezmoi:apply
       - task: install:brew
       - task: brew:bundle
-      - task: vscode:ext
       - task: mise:install
+      - task: defaults:ia
+
+  watch:
+    aliases: [w]
+    deps:
+      - task: git:watch
+        vars:
+          DIR: ~/fireworks/subnote/para
+    watch: true
+
+  push:
+    aliases: [p]
+    deps:
+      - task: git:push
+        vars:
+          DIR: ~/fireworks/subnote

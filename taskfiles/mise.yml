@@ -1,8 +1,40 @@
 version: "3"
 
 tasks:
-  install:
+  use-global:
+    aliases: [ug]
     cmds:
-      - mise install -y java
-      - mise install -y erlang
-      - mise install -y
+      - mise u -g {{ .PLUGIN }}
+
+  install:
+    aliases: [i]
+    cmds:
+      - for:
+          - java@openjdk-22.0.1
+        task: use-global
+        vars: { PLUGIN: "{{ .ITEM }}" }
+      - task: install-erlang
+      - for:
+          - elixir@1.16.0-otp-26
+          - nodejs@18.17.1
+          - python@3.9.19
+          - zig@0.12.0
+        task: use-global
+        vars: { PLUGIN: "{{ .ITEM }}" }
+
+  install-erlang:
+    aliases: [ie]
+    vars:
+      ODBC_PATH:
+        sh: brew --prefix unixodbc
+    env:
+      KERL_BUILD_DOCS: yes
+      KERL_CONFIGURE_OPTIONS: --with-odbc={{ .ODBC_PATH }}
+      CFLAGS: -I{{ .ODBC_PATH }}/include -O2
+      LDFLAGS: -L{{ .ODBC_PATH }}/lib
+    cmds:
+      - mise u -g erlang@26.2.4
+
+  prune:
+    cmds:
+      - mise prune -y

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>classes</key>
+	<dict>
+		<key>com.apple.ctkcard</key>
+		<string>B5957723-1829-513E-8F8E-ED0DE2A5EAA2</string>
+		<key>com.apple.pivtoken</key>
+		<string>793043B8-3F29-5674-8DB4-10D3AC65929B</string>
+		<key>com.apple.platformsso</key>
+		<string>A58F5ED3-03A6-5999-B5CF-6B05E5ECE320</string>
+	</dict>
+</dict>
+</plist>

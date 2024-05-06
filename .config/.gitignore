@@ -4,6 +4,7 @@
 
 !starship.toml
 
+!aerospace/aerospace.toml
 !chezmoi/chezmoi.json
 !karabiner/karabiner.json
 !kitty/kitty.conf

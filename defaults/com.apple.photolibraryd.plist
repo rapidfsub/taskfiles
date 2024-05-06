@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PLLibraryBookmarkManagerBookmarksByPath</key>
+	<dict>
+		<key>/Users/r4f3works/Library/Photos/Libraries/Syndication.photoslibrary</key>
+		<data>
+		Ym9vayADAAAAAAQQMAAAAMtaiZJT3EIJ6rFc2HLMgXDl6EHaD8QeYe/2pykI
+		jIK/HAIAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAJAAAAAQEAAHI0
+		ZjN3b3JrcwAAAAcAAAABAQAATGlicmFyeQAGAAAAAQEAAFBob3RvcwAACQAA
+		AAEBAABMaWJyYXJpZXMAAAAZAAAAAQEAAFN5bmRpY2F0aW9uLnBob3Rvc2xp
+		YnJhcnkAAAAYAAAAAQYAABAAAAAgAAAANAAAAEQAAABUAAAAaAAAAAgAAAAE
+		AwAASEIAAAAAAAAIAAAABAMAAORjAAAAAAAACAAAAAQDAADrYwAAAAAAAAgA
+		AAAEAwAAaZkAAAAAAAAIAAAABAMAAGqZAAAAAAAACAAAAAQDAABrmQAAAAAA
+		ABgAAAABBgAArAAAALwAAADMAAAA3AAAAOwAAAD8AAAACAAAAAAEAABBxe49
+		YvbHZxgAAAABAgAAAgAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAAE
+		AAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1h
+		Y2ludG9zaCBIRAgAAAAEAwAAAJCClucAAAAIAAAAAAQAAEHF1gPBgAAAJAAA
+		AAEBAAAzMDAzQjE3NC0zODRGLTQzNjgtOTAyQy05RDE5RjM3QTc4RjUYAAAA
+		AQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAAB
+		BQAAzAAAAP7///8BAAAAAAAAABAAAAAEEAAAjAAAAAAAAAAFEAAADAEAAAAA
+		AAAQEAAAPAEAAAAAAABAEAAALAEAAAAAAAACIAAACAIAAAAAAAAFIAAAeAEA
+		AAAAAAAQIAAAiAEAAAAAAAARIAAAvAEAAAAAAAASIAAAnAEAAAAAAAATIAAA
+		rAEAAAAAAAAgIAAA6AEAAAAAAAAwIAAAFAIAAAAAAAABwAAAXAEAAAAAAAAR
+		wAAAIAAAAAAAAAASwAAAbAEAAAAAAAAQ0AAABAAAAAAAAAA=
+		</data>
+	</dict>
+	<key>PLSyndicationLastUpdateDate</key>
+	<date>2024-04-27T00:13:24Z</date>
+	<key>com.apple.photolibraryd.purgeNotification.3.purge_markers</key>
+	<dict>
+		<key>3003B174-384F-4368-902C-9D19F37A78F5</key>
+		<array>
+			<string>82FFEF09-4CC0-4D27-B8EF-0BE4CA74FD79</string>
+			<integer>503745781</integer>
+		</array>
+	</dict>
+	<key>search.coreSpotlight.universalSearchEligibility</key>
+	<dict>
+		<key>search.coreSpotlight.lastKnownEligibility</key>
+		<false/>
+		<key>search.coreSpotlight.lastKnownSPLDatabaseUUID</key>
+		<string></string>
+		<key>search.coreSpotlight.lastKnownSPLPath</key>
+		<string>/Users/r4f3works/Pictures/Photos Library.photoslibrary</string>
+		<key>search.coreSpotlight.needsSpotlightIndexDrop</key>
+		<true/>
+		<key>search.coreSpotlight.needsSpotlightIndexRebuild</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

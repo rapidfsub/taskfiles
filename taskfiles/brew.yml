@@ -17,6 +17,7 @@ tasks:
       - task: dump
 
   install-cask:
+    aliases: [ic]
     cmds:
-      - brew install --cask --appdir=~/Applications {{.CLI_ARGS}}
+      - brew install --cask --no-quarantine --appdir=~/Applications {{.CLI_ARGS}}
       - task: dump

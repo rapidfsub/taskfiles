@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CKPerBootTasks</key>
+	<array>
+		<string>CKAcccountInfoCacheReset</string>
+	</array>
+	<key>CKStartupTime</key>
+	<integer>1714176622</integer>
+	<key>LastLaunchDate.routined</key>
+	<date>2024-04-27T00:13:23Z</date>
+	<key>PlaceInferenceMetricsClientQueryCount0</key>
+	<integer>1</integer>
+	<key>RTDefaultsDeviceMetricCurrentReachability</key>
+	<integer>1</integer>
+	<key>RTDefaultsDeviceMetricCurrentReachabilityStartDate</key>
+	<date>2024-04-27T00:13:23Z</date>
+	<key>RTDefaultsSuggestionLastDateWalkingBoutTriggerIsScheduled</key>
+	<date>4001-01-01T00:00:00Z</date>
+	<key>RTDefaultsSuggestionsManagerSystemVersion</key>
+	<string>14.4.1</string>
+	<key>RTDefaultsSuggestionsManagerSystemVersionUpdateDate</key>
+	<date>2024-04-27T00:13:24Z</date>
+	<key>SMDefaultsBootInfo</key>
+	<string>0EDBE875-85B0-4A45-987C-F0FFB59833FE</string>
+</dict>
+</plist>

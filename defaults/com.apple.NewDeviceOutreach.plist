@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DefaultDeviceActivationDate</key>
+	<date>2024-04-27T00:13:23Z</date>
+	<key>NDOMigrationVersion</key>
+	<integer>2</integer>
+	<key>PostUpgradeOSVersionKey</key>
+	<string>14.4.1</string>
+	<key>com.apple.ndoagent.upgrade.TargetDate</key>
+	<date>2024-04-27T06:13:49Z</date>
+</dict>
+</plist>
