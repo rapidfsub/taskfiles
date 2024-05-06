@@ -10,5 +10,6 @@ alias cat=bat
 alias ls=eza
 alias ll="ls -al"
 alias lg=lazygit
+alias ps=procs
 alias smd="export MIX_ENV=dev"
 alias smt="export MIX_ENV=test"
