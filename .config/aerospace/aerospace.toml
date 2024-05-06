@@ -182,7 +182,7 @@ ctrl-shift-d = 'exec-and-forget open -a Dash.app'
 ctrl-shift-r = 'exec-and-forget open -a TablePlus.app'
 ctrl-shift-v = 'exec-and-forget open -a Visual\ Studio\ Code.app'
 ctrl-shift-w = 'exec-and-forget open -a Arc.app'
-ctrl-shift-z = 'exec-and-forget open -a Obsidian.app'
+ctrl-shift-z = 'exec-and-forget open -a Logseq.app'
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -220,6 +220,10 @@ run = 'move-node-to-workspace V'
 [[on-window-detected]]
 if.app-id = 'company.thebrowser.Browser'
 run = 'move-node-to-workspace W'
+
+[[on-window-detected]]
+if.app-id = 'com.electron.logseq'
+run = 'move-node-to-workspace Z'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'obsidian'
