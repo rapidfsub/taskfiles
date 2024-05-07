@@ -179,6 +179,7 @@ alt-shift-semicolon = 'mode service'
 
 ctrl-enter = 'exec-and-forget open -a Kitty.app'
 ctrl-shift-d = 'exec-and-forget open -a Dash.app'
+ctrl-shift-f = 'exec-and-forget open -a Figma.app'
 ctrl-shift-r = 'exec-and-forget open -a TablePlus.app'
 ctrl-shift-v = 'exec-and-forget open -a Visual\ Studio\ Code.app'
 ctrl-shift-w = 'exec-and-forget open -a Arc.app'
@@ -204,6 +205,10 @@ alt-shift-l = ['join-with right', 'mode main']
 [[on-window-detected]]
 if.app-name-regex-substring = 'dash'
 run = 'move-node-to-workspace D'
+
+[[on-window-detected]]
+if.app-id = 'com.figma.Desktop'
+run = 'move-node-to-workspace F'
 
 [[on-window-detected]]
 if.app-id = 'com.tinyapp.TablePlus-setapp'
