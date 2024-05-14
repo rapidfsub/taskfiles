@@ -44,6 +44,7 @@
   "html.format.maxPreserveNewLines": 1,
   "html.format.preserveNewLines": true,
   "redhat.telemetry.enabled": true,
+  "terminal.integrated.defaultProfile.osx": "fish",
   "terminal.integrated.scrollback": 10000000,
   "workbench.remoteIndicator.showExtensionRecommendations": false
 }
