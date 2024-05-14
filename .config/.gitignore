@@ -6,6 +6,7 @@
 
 !aerospace/aerospace.toml
 !chezmoi/chezmoi.json
+!fish/**/*
 !karabiner/karabiner.json
 !kitty/kitty.conf
 !linearmouse/linearmouse.json
