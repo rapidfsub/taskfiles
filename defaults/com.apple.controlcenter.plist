@@ -35,8 +35,8 @@
 	<key>NSStatusItem Visible NowPlaying</key>
 	<false/>
 	<key>NSStatusItem Visible Sound</key>
-	<true/>
+	<false/>
 	<key>NSStatusItem Visible WiFi</key>
-	<true/>
+	<false/>
 </dict>
 </plist>
