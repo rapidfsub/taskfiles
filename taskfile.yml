@@ -20,7 +20,8 @@ tasks:
       - task: install:brew
       - task: brew:bundle
       - task: mise:install
-      - task: defaults:ia
+      - task: defaults:import-all
+      - task: defaults:setup
 
   watch:
     aliases: [w]

@@ -2,6 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AccessibilityShortcuts</key>
+	<integer>1</integer>
+	<key>AirDrop</key>
+	<integer>8</integer>
+	<key>Battery</key>
+	<integer>9</integer>
+	<key>BatteryShowPercentage</key>
+	<true/>
+	<key>Bluetooth</key>
+	<integer>8</integer>
+	<key>Display</key>
+	<integer>8</integer>
+	<key>FocusModes</key>
+	<integer>8</integer>
+	<key>Hearing</key>
+	<integer>1</integer>
 	<key>IRServiceToken</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -11,5 +27,19 @@
 	SVJTZXJ2aWNlVG9rZW6iGhteSVJTZXJ2aWNlVG9rZW5YTlNPYmplY3QIERokKTI3SUxR
 	U1lfZm18kJKUlrCyt8LL2t3sAAAAAAAAAQEAAAAAAAAAHAAAAAAAAAAAAAAAAAAAAPU=
 	</data>
+	<key>KeyboardBrightness</key>
+	<integer>1</integer>
+	<key>MusicRecognition</key>
+	<integer>1</integer>
+	<key>NowPlaying</key>
+	<integer>8</integer>
+	<key>ScreenMirroring</key>
+	<integer>8</integer>
+	<key>Sound</key>
+	<integer>8</integer>
+	<key>UserSwitcher</key>
+	<integer>1</integer>
+	<key>WiFi</key>
+	<integer>8</integer>
 </dict>
 </plist>

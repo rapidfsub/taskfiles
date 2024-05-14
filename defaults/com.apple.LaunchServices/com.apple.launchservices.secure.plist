@@ -27,6 +27,61 @@
 			<string>bitwarden</string>
 		</dict>
 		<dict>
+			<key>LSHandlerContentType</key>
+			<string>com.apple.xcode.docset</string>
+			<key>LSHandlerPreferredVersions</key>
+			<dict>
+				<key>LSHandlerRoleAll</key>
+				<string>-</string>
+			</dict>
+			<key>LSHandlerRoleAll</key>
+			<string>com.kapeli.dash-setapp</string>
+		</dict>
+		<dict>
+			<key>LSHandlerContentType</key>
+			<string>com.apple.documentation.doccarchive</string>
+			<key>LSHandlerPreferredVersions</key>
+			<dict>
+				<key>LSHandlerRoleAll</key>
+				<string>-</string>
+			</dict>
+			<key>LSHandlerRoleAll</key>
+			<string>com.kapeli.dash-setapp</string>
+		</dict>
+		<dict>
+			<key>LSHandlerPreferredVersions</key>
+			<dict>
+				<key>LSHandlerRoleAll</key>
+				<string>-</string>
+			</dict>
+			<key>LSHandlerRoleAll</key>
+			<string>com.getcleanshot.app-setapp</string>
+			<key>LSHandlerURLScheme</key>
+			<string>cleanshot</string>
+		</dict>
+		<dict>
+			<key>LSHandlerPreferredVersions</key>
+			<dict>
+				<key>LSHandlerRoleAll</key>
+				<string>-</string>
+			</dict>
+			<key>LSHandlerRoleAll</key>
+			<string>com.electron.logseq</string>
+			<key>LSHandlerURLScheme</key>
+			<string>logseq</string>
+		</dict>
+		<dict>
+			<key>LSHandlerPreferredVersions</key>
+			<dict>
+				<key>LSHandlerRoleAll</key>
+				<string>-</string>
+			</dict>
+			<key>LSHandlerRoleAll</key>
+			<string>com.figma.desktop</string>
+			<key>LSHandlerURLScheme</key>
+			<string>figma</string>
+		</dict>
+		<dict>
 			<key>LSHandlerPreferredVersions</key>
 			<dict>
 				<key>LSHandlerRoleAll</key>

@@ -1,82 +1,78 @@
 version: "3"
 
-tasks:
-  mkdir:
-    cmds:
-      - mkdir -p defaults/com.apple.LaunchServices
-      - mkdir -p defaults/checksum/com.apple.LaunchServices
-      - mkdir -p defaults/ByHost
-      - mkdir -p defaults/checksum/ByHost
-    run: once
+vars:
+  DIRS: ./defaults
+    ./defaults/ByHost
+    ./defaults/Library/Preferences
+    ./defaults/com.apple.LaunchServices
+  # defaults domains
+  DOMAINS: NSGlobalDomain
+    /Library/Preferences/com.apple.alf
+    com.apple.Accessibility
+    com.apple.AppleMultitouchTrackpad
+    com.apple.LaunchServices/com.apple.launchservices.secure
+    com.apple.HIToolbox
+    com.apple.controlcenter
+    com.apple.dock
+    com.apple.finder
+    com.apple.menuextra.clock
+  # defaults -currentHost domains
+  HOST_DOMAINS: com.apple.controlcenter
+    com.apple.dock
 
-  dump:
-    requires:
-      vars: [DOMAIN, SUPDOMAIN, DIR, FLAGS]
-    label: defaults:dump-{{ .DOMAIN }}
+tasks:
+  dump-all:
+    aliases: [da]
     deps:
       - mkdir
     cmds:
-      - defaults {{ .FLAGS }} export {{ .FULL_DOMAIN }} - > {{ .PATH }}
-      - cat {{ .PATH }} | md5sum > {{ .CSUM }}
-    status:
-      - test -f {{ .CSUM }} && diff {{ .CSUM }} <(defaults {{ .FLAGS }} export {{ .FULL_DOMAIN }} - | md5sum)
-    vars:
-      FULL_DOMAIN: "{{ joinPath .SUPDOMAIN .DOMAIN }}"
-      PATH: "defaults/{{ joinPath .DIR .DOMAIN }}.plist"
-      CSUM: "defaults/checksum/{{ joinPath .DIR .DOMAIN }}.md5"
+      - for: { var: DOMAINS }
+        task: dump
+        vars: { DOMAIN: "{{ .ITEM }}" }
+      - for: { var: HOST_DOMAINS }
+        task: dump
+        vars:
+          { DOMAIN: "{{ .ITEM }}", FLAGS: -currentHost, DIR: ./defaults/ByHost }
 
-  dump-all:
-    aliases: [da]
-    cmds:
-      - for: { var: DOMAIN, split: ", " }
-        task: dump
-        vars:
-          DOMAIN: "{{ .ITEM }}"
-          SUPDOMAIN: ""
-          DIR: ""
-          FLAGS: ""
-      - for: { var: CURRENT_HOST, split: ", " }
-        task: dump
-        vars:
-          DOMAIN: "{{ .ITEM }}"
-          SUPDOMAIN: ""
-          DIR: ByHost
-          FLAGS: "-currentHost"
-      - for: { var: LAUNCH_SERVICE, split: "\n" }
-        task: dump
-        vars:
-          DOMAIN: "{{ .ITEM }}"
-          SUPDOMAIN: com.apple.LaunchServices
-          DIR: com.apple.LaunchServices
-          FLAGS: ""
+  dump:
+    aliases: [d]
     vars:
-      DOMAIN:
-        sh: defaults domains
-      CURRENT_HOST:
-        sh: defaults -currentHost domains
-      LAUNCH_SERVICE:
-        sh: ls -1 ~/Library/Preferences/com.apple.LaunchServices | grep .plist | sd .plist ''
-
-  import:
-    requires:
-      vars: [DOMAIN, SUPDOMAIN, DIR, FLAGS]
-    label: defaults:dump-{{ .DOMAIN }}
+      DOMAIN: "{{ .DOMAIN }}"
+      FLAGS: "{{ .FLAGS }}"
+      DIR: '{{ default "defaults" .DIR }}'
     cmds:
-      - defaults {{ .FLAGS }} import {{ .FULL_DOMAIN }} {{ .PATH }}
-    vars:
-      FULL_DOMAIN: "{{ joinPath .SUPDOMAIN .DOMAIN }}"
-      PATH: "defaults/{{ joinPath .DIR .DOMAIN }}.plist"
+      - defaults {{ .FLAGS }} export {{ .DOMAIN }} - > {{ joinPath .DIR .DOMAIN }}.plist
 
   import-all:
     aliases: [ia]
     cmds:
-      - for: [com.apple.launchservices.secure]
+      - for: { var: DOMAINS }
+        task: import
+        vars: { DOMAIN: "{{ .ITEM }}" }
+      - for: { var: HOST_DOMAINS }
         task: import
         vars:
-          DOMAIN: "{{ .ITEM }}"
-          SUPDOMAIN: com.apple.LaunchServices
-          DIR: com.apple.LaunchServices
-          FLAGS: ""
+          { DOMAIN: "{{ .ITEM }}", FLAGS: -currentHost, DIR: ./defaults/ByHost }
+
+  import:
+    aliases: [i]
+    vars:
+      DOMAIN: "{{ .DOMAIN }}"
+      FLAGS: "{{ .FLAGS }}"
+      DIR: '{{ default "defaults" .DIR }}'
+    cmds:
+      - defaults {{ .FLAGS }} import {{ .DOMAIN }} {{ joinPath .DIR .DOMAIN }}.plist
+
+  mkdir:
+    cmds:
+      - for: { var: DIRS }
+        cmd: mkdir -p {{ .ITEM }}
+
+  domains:
+    cmds:
+      - defaults domains > ./domains.txt
+      - defaults -currentHost domains >> ./domains.txt
+      - "sd -F ', ' '\n' ./domains.txt"
 
   # https://macos-defaults.com
   setup:
