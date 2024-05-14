@@ -1,28 +1,6 @@
 version: "3"
 
 tasks:
-  watch:
-    aliases: [w]
-    label: "git:watch -- {{ .DIR }}"
-    deps:
-      - task: pull
-        vars:
-          DIR: "{{ .DIR }}"
-    cmds:
-      - git add .
-      - git commit -m "{{ .DATE }}" {{ if eq .AMEND "true" }} --amend {{ end }} --allow-empty
-    vars:
-      DIR: "{{ default .CLI_ARGS .DIR }}"
-      DATE:
-        sh: date '+%Y-%m-%d %p'
-      LAST_COMMIT:
-        sh: cd {{ .DIR }} && git log -1 --pretty=%B | sd '\n+' '\n'
-      AMEND: "{{ eq .DATE .LAST_COMMIT }}"
-    dir: "{{ .DIR }}"
-    watch: true
-    sources:
-      - ./**/*
-
   push:
     aliases: [p]
     label: "git:push -- {{ .DIR }}"
@@ -40,3 +18,36 @@ tasks:
     vars:
       DIR: "{{ default .CLI_ARGS .DIR }}"
     dir: "{{ .DIR }}"
+
+  auto-commit:
+    aliases: [ac]
+    label: "git:commit -- {{ .DIR }}"
+    deps:
+      - task: pull
+        vars:
+          DIR: "{{ .DIR }}"
+    cmds:
+      - git add .
+      - git commit -m "{{ .DATE }}" {{ if eq .AMEND "true" }} --amend {{ end }} --allow-empty
+    vars:
+      DIR: "{{ default .CLI_ARGS .DIR }}"
+      DATE:
+        sh: date '+%Y-%m-%d %p'
+      LAST_COMMIT:
+        sh: cd {{ .DIR }} && git log -1 --pretty=%B | sd '\n+' '\n'
+      AMEND: "{{ eq .DATE .LAST_COMMIT }}"
+    dir: "{{ .DIR }}"
+
+  watch:
+    aliases: [w]
+    label: "git:watch -- {{ .DIR }}"
+    cmds:
+      - task: pull
+        vars:
+          DIR: "{{ .DIR }}"
+    vars:
+      DIR: "{{ default .CLI_ARGS .DIR }}"
+    dir: "{{ .DIR }}"
+    watch: true
+    sources:
+      - ./**/*

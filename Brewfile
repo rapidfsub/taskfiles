@@ -1,7 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "nikitabobko/tap"
-brew "bitwarden-cli"
 brew "erlang"
 cask "aerospace", args: { appdir: "~/Applications", no_quarantine: true }
 cask "aldente", args: { appdir: "~/Applications", no_quarantine: true }
@@ -23,7 +22,6 @@ cask "macs-fan-control", args: { appdir: "~/Applications", no_quarantine: true }
 cask "notion", args: { appdir: "~/Applications", no_quarantine: true }
 cask "obsidian", args: { appdir: "~/Applications", no_quarantine: true }
 cask "postgres-unofficial", args: { appdir: "~/Applications", no_quarantine: true }
-cask "raycast", args: { appdir: "~/Applications", no_quarantine: true }
 cask "rectangle", args: { appdir: "~/Applications", no_quarantine: true }
 cask "setapp", args: { appdir: "~/Applications", no_quarantine: true }
 cask "visual-studio-code", args: { appdir: "~/Applications", no_quarantine: true }

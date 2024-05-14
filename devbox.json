@@ -20,7 +20,8 @@
     "typos@latest",
     "bat@latest",
     "exercism@latest",
-    "flyctl@latest"
+    "flyctl@latest",
+    "procs@latest"
   ],
   "shell": {
     "init_hook": [

@@ -36,3 +36,10 @@ tasks:
       - task: git:push
         vars:
           DIR: ~/fireworks/subnote
+
+  auto-commit:
+    aliases: [ac]
+    deps:
+      - task: git:auto-commit
+        vars:
+          DIR: ~/fireworks/para

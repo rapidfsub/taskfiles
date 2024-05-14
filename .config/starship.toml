@@ -162,3 +162,8 @@ symbol = " "
 
 [zig]
 symbol = " "
+
+[env_var.MIX_ENV]
+default = "dev"
+symbol = "MIX_ENV"
+format = "[$symbol;$env_value]($style) "

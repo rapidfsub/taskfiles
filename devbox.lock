@@ -729,6 +729,54 @@
         }
       }
     },
+    "procs@latest": {
+      "last_modified": "2024-04-19T17:36:04-04:00",
+      "resolved": "github:NixOS/nixpkgs/92d295f588631b0db2da509f381b4fb1e74173c5#procs",
+      "source": "devbox-search",
+      "version": "0.14.5",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/16x4c6svpjar8bfm1201x7bv304s3k87-procs-0.14.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/16x4c6svpjar8bfm1201x7bv304s3k87-procs-0.14.5"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/z3kv79nzspg10w3brcwy7114ww430bi2-procs-0.14.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/z3kv79nzspg10w3brcwy7114ww430bi2-procs-0.14.5"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/vz80j6v8m0zkyqxb2mfqhglhgz6qy7xy-procs-0.14.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/vz80j6v8m0zkyqxb2mfqhglhgz6qy7xy-procs-0.14.5"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/5ph2ijs625w16fnbj31ngd94wav71167-procs-0.14.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/5ph2ijs625w16fnbj31ngd94wav71167-procs-0.14.5"
+        }
+      }
+    },
     "rar@latest": {
       "last_modified": "2024-04-19T17:36:04-04:00",
       "resolved": "github:NixOS/nixpkgs/92d295f588631b0db2da509f381b4fb1e74173c5#rar",

@@ -179,10 +179,11 @@ alt-shift-semicolon = 'mode service'
 
 ctrl-enter = 'exec-and-forget open -a Kitty.app'
 ctrl-shift-d = 'exec-and-forget open -a Dash.app'
+ctrl-shift-f = 'exec-and-forget open -a Figma.app'
 ctrl-shift-r = 'exec-and-forget open -a TablePlus.app'
 ctrl-shift-v = 'exec-and-forget open -a Visual\ Studio\ Code.app'
 ctrl-shift-w = 'exec-and-forget open -a Arc.app'
-ctrl-shift-z = 'exec-and-forget open -a Obsidian.app'
+ctrl-shift-z = 'exec-and-forget open -a Logseq.app'
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -206,6 +207,10 @@ if.app-name-regex-substring = 'dash'
 run = 'move-node-to-workspace D'
 
 [[on-window-detected]]
+if.app-id = 'com.figma.Desktop'
+run = 'move-node-to-workspace F'
+
+[[on-window-detected]]
 if.app-id = 'com.tinyapp.TablePlus-setapp'
 run = 'move-node-to-workspace R'
 
@@ -220,6 +225,10 @@ run = 'move-node-to-workspace V'
 [[on-window-detected]]
 if.app-id = 'company.thebrowser.Browser'
 run = 'move-node-to-workspace W'
+
+[[on-window-detected]]
+if.app-id = 'com.electron.logseq'
+run = 'move-node-to-workspace Z'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'obsidian'
