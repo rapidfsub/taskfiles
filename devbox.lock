@@ -309,6 +309,70 @@
         }
       }
     },
+    "fish@latest": {
+      "last_modified": "2024-05-01T20:12:28Z",
+      "resolved": "github:NixOS/nixpkgs/1c74cc292b61614e74c1cf0d372f79d57fb4936b#fish",
+      "source": "devbox-search",
+      "version": "3.7.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/d627bqfmjx78072dm5mrrfc4l6p040dk-fish-3.7.1",
+              "default": true
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/c40yvxvx41wgsqiv7bikdpak3qq12y68-fish-3.7.1-doc"
+            }
+          ],
+          "store_path": "/nix/store/d627bqfmjx78072dm5mrrfc4l6p040dk-fish-3.7.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/scjwifxrif79w02fgx7mci3bwkcirb32-fish-3.7.1",
+              "default": true
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/v5zdbwih74j9ybi42j657hivpkidicna-fish-3.7.1-doc"
+            }
+          ],
+          "store_path": "/nix/store/scjwifxrif79w02fgx7mci3bwkcirb32-fish-3.7.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/xc3j39fqsfaxjbjqq9kwv96n9b8sjpms-fish-3.7.1",
+              "default": true
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/3xj8z2hj2p5zpp0isw7bnjfhdal204vr-fish-3.7.1-doc"
+            }
+          ],
+          "store_path": "/nix/store/xc3j39fqsfaxjbjqq9kwv96n9b8sjpms-fish-3.7.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/l4yds7aqk64bmbmvgjwa8csp5f7k6vcb-fish-3.7.1",
+              "default": true
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/k5bp4y9c4lwdx7hnhyywh6khr5999376-fish-3.7.1-doc"
+            }
+          ],
+          "store_path": "/nix/store/l4yds7aqk64bmbmvgjwa8csp5f7k6vcb-fish-3.7.1"
+        }
+      }
+    },
     "flyctl@latest": {
       "last_modified": "2024-04-26T22:17:36-04:00",
       "resolved": "github:NixOS/nixpkgs/698fd43e541a6b8685ed408aaf7a63561018f9f8#flyctl",
@@ -726,6 +790,54 @@
             }
           ],
           "store_path": "/nix/store/lsyl1zfww71bxkkajbbc3v5ixgi7lwyf-mise-2024.4.0"
+        }
+      }
+    },
+    "oh-my-fish@latest": {
+      "last_modified": "2024-05-03T15:42:32Z",
+      "resolved": "github:NixOS/nixpkgs/5fd8536a9a5932d4ae8de52b7dc08d92041237fc#oh-my-fish",
+      "source": "devbox-search",
+      "version": "2022-03-27",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ydnxj8lriqfb72jhqcz75dnmmm0367r8-oh-my-fish-unstable-2022-03-27",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/ydnxj8lriqfb72jhqcz75dnmmm0367r8-oh-my-fish-unstable-2022-03-27"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/bcnc47wzzvz5c9yv0rnj00k5227cq33z-oh-my-fish-unstable-2022-03-27",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/bcnc47wzzvz5c9yv0rnj00k5227cq33z-oh-my-fish-unstable-2022-03-27"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/g1iaaxv7az90351qrzs7bi2cyrvd6vwj-oh-my-fish-unstable-2022-03-27",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/g1iaaxv7az90351qrzs7bi2cyrvd6vwj-oh-my-fish-unstable-2022-03-27"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/d0pjndgv0bylbbjwkwwxqy92vhxz6z7z-oh-my-fish-unstable-2022-03-27",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/d0pjndgv0bylbbjwkwwxqy92vhxz6z7z-oh-my-fish-unstable-2022-03-27"
         }
       }
     },

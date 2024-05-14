@@ -21,7 +21,8 @@
     "bat@latest",
     "exercism@latest",
     "flyctl@latest",
-    "procs@latest"
+    "procs@latest",
+    "fish@latest"
   ],
   "shell": {
     "init_hook": [
