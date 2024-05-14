@@ -181,6 +181,7 @@ ctrl-enter = 'exec-and-forget open -a Kitty.app'
 ctrl-shift-d = 'exec-and-forget open -a Dash.app'
 ctrl-shift-f = 'exec-and-forget open -a Figma.app'
 ctrl-shift-r = 'exec-and-forget open -a TablePlus.app'
+ctrl-shift-s = 'exec-and-forget open -a YES24eBook.app'
 ctrl-shift-v = 'exec-and-forget open -a Visual\ Studio\ Code.app'
 ctrl-shift-w = 'exec-and-forget open -a Arc.app'
 ctrl-shift-z = 'exec-and-forget open -a Logseq.app'
@@ -213,6 +214,10 @@ run = 'move-node-to-workspace F'
 [[on-window-detected]]
 if.app-id = 'com.tinyapp.TablePlus-setapp'
 run = 'move-node-to-workspace R'
+
+[[on-window-detected]]
+if.app-id = 'com.yes24.macEBook'
+run = 'move-node-to-workspace S'
 
 [[on-window-detected]]
 if.app-id = 'net.kovidgoyal.kitty'
