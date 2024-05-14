@@ -560,7 +560,7 @@
 	<key>FXPreferredSearchViewStyleVersion</key>
 	<string>%00%00%00%01</string>
 	<key>FXPreferredViewStyle</key>
-	<string>glyv</string>
+	<string>clmv</string>
 	<key>FXQuickActionsConfigUpgradeLevel</key>
 	<integer>3</integer>
 	<key>FXRecentFolders</key>
