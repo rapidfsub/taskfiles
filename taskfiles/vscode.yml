@@ -4,4 +4,4 @@ tasks:
   ext:
     cmds:
       - rm -rf ~/.vscode/extensions
-      - cat ./extensions.txt | xargs -L1 code --install-extension
+      - tomlq -c .extensions.[] ./extensions.toml | xargs -L1 code --install-extension
