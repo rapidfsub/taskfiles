@@ -13,16 +13,15 @@ end
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
-    alias asdf=mise
-    alias cat=bat
-    alias cd=z
-    alias ls=eza
-    alias ll="ls -al"
-    alias lg=lazygit
-    alias ps=procs
-    alias smd="export MIX_ENV=dev"
-    alias smt="export MIX_ENV=test"
-    alias tl=tldr
+    alias asdf mise
+    alias cat bat
+    alias ls eza
+    alias ll "ls -al"
+    alias lg lazygit
+    alias ps procs
+    alias smd "export MIX_ENV=dev"
+    alias smt "export MIX_ENV=test"
+    alias tl tldr
 end
 
 direnv hook fish | source
