@@ -2,6 +2,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "nikitabobko/tap"
 brew "erlang"
+brew "fish"
 cask "aerospace", args: { appdir: "~/Applications", no_quarantine: true }
 cask "aldente", args: { appdir: "~/Applications", no_quarantine: true }
 cask "arc", args: { appdir: "~/Applications", no_quarantine: true }
@@ -25,3 +26,4 @@ cask "postgres-unofficial", args: { appdir: "~/Applications", no_quarantine: tru
 cask "rectangle", args: { appdir: "~/Applications", no_quarantine: true }
 cask "setapp", args: { appdir: "~/Applications", no_quarantine: true }
 cask "visual-studio-code", args: { appdir: "~/Applications", no_quarantine: true }
+cask "yes24-ebook", args: { appdir: "~/Applications", no_quarantine: true }

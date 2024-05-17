@@ -12,3 +12,7 @@ tasks:
   rosetta:
     cmds:
       - softwareupdate --install-rosetta --agree-to-license
+
+  omf:
+    cmds:
+      - curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish

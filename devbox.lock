@@ -261,6 +261,54 @@
         }
       }
     },
+    "faq@latest": {
+      "last_modified": "2024-05-12T16:19:40Z",
+      "resolved": "github:NixOS/nixpkgs/3281bec7174f679eabf584591e75979a258d8c40#faq",
+      "source": "devbox-search",
+      "version": "2022-01-09",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/pcs28ny0xi6f62sy5iz150599zy13sgc-faq-unstable-2022-01-09",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/pcs28ny0xi6f62sy5iz150599zy13sgc-faq-unstable-2022-01-09"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/dqyag2ksrafwvfdqn70j107ffn68iq6a-faq-unstable-2022-01-09",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/dqyag2ksrafwvfdqn70j107ffn68iq6a-faq-unstable-2022-01-09"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0mfi9gflg1pxcpici34jq8fs3z7qpv3a-faq-unstable-2022-01-09",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/0mfi9gflg1pxcpici34jq8fs3z7qpv3a-faq-unstable-2022-01-09"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/n0l5wdc4nxdkpj1w4l45ak9lw6289x3c-faq-unstable-2022-01-09",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/n0l5wdc4nxdkpj1w4l45ak9lw6289x3c-faq-unstable-2022-01-09"
+        }
+      }
+    },
     "fd@latest": {
       "last_modified": "2024-04-19T17:36:04-04:00",
       "resolved": "github:NixOS/nixpkgs/92d295f588631b0db2da509f381b4fb1e74173c5#fd",
@@ -959,6 +1007,54 @@
         }
       }
     },
+    "tealdeer@latest": {
+      "last_modified": "2024-05-12T16:19:40Z",
+      "resolved": "github:NixOS/nixpkgs/3281bec7174f679eabf584591e75979a258d8c40#tealdeer",
+      "source": "devbox-search",
+      "version": "1.6.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/qxfnsnn6jas7ibaf8q5drdc3bc1xxvcs-tealdeer-1.6.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/qxfnsnn6jas7ibaf8q5drdc3bc1xxvcs-tealdeer-1.6.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/knsi20r86ih8hnw3j3v45hmjssca605n-tealdeer-1.6.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/knsi20r86ih8hnw3j3v45hmjssca605n-tealdeer-1.6.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/549y7arzgliksyxsn28fk5wq4qfak1sh-tealdeer-1.6.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/549y7arzgliksyxsn28fk5wq4qfak1sh-tealdeer-1.6.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/h6qmy1wn09xbbisv1a5nf8zisl68vmb8-tealdeer-1.6.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/h6qmy1wn09xbbisv1a5nf8zisl68vmb8-tealdeer-1.6.1"
+        }
+      }
+    },
     "typos@latest": {
       "last_modified": "2024-04-19T17:36:04-04:00",
       "resolved": "github:NixOS/nixpkgs/92d295f588631b0db2da509f381b4fb1e74173c5#typos",
@@ -1004,6 +1100,70 @@
             }
           ],
           "store_path": "/nix/store/2lx5aqw5qj0mh6k65c6kivpns08485sl-typos-1.20.9"
+        }
+      }
+    },
+    "yq@latest": {
+      "last_modified": "2024-05-12T16:19:40Z",
+      "resolved": "github:NixOS/nixpkgs/3281bec7174f679eabf584591e75979a258d8c40#yq",
+      "source": "devbox-search",
+      "version": "3.4.3",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/nrih130a3nj4svf9kajgxj3hq4v8hb77-python3.11-yq-3.4.3",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/z99h1s715g18w067lwazawvf63v9bb85-python3.11-yq-3.4.3-dist"
+            }
+          ],
+          "store_path": "/nix/store/nrih130a3nj4svf9kajgxj3hq4v8hb77-python3.11-yq-3.4.3"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4bgwg3ri155asiqh0pr9a967k53alz6s-python3.11-yq-3.4.3",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/qrjnf41nii5spbnhp77mamy9m6fh1dp6-python3.11-yq-3.4.3-dist"
+            }
+          ],
+          "store_path": "/nix/store/4bgwg3ri155asiqh0pr9a967k53alz6s-python3.11-yq-3.4.3"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/gbhmlkqgzp9bfjfknllg2bi2js2wak3b-python3.11-yq-3.4.3",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/npvyf1pnavgzn1zsgkxsdqflby6k2hjx-python3.11-yq-3.4.3-dist"
+            }
+          ],
+          "store_path": "/nix/store/gbhmlkqgzp9bfjfknllg2bi2js2wak3b-python3.11-yq-3.4.3"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/dn12w66p6zggz063vb97dfh9ak8jck6q-python3.11-yq-3.4.3",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/m5r7mszc9mng9nqif38spcrlsjjyy90n-python3.11-yq-3.4.3-dist"
+            }
+          ],
+          "store_path": "/nix/store/dn12w66p6zggz063vb97dfh9ak8jck6q-python3.11-yq-3.4.3"
         }
       }
     },

@@ -27,13 +27,14 @@ tasks:
     vars:
       ODBC_PATH:
         sh: brew --prefix unixodbc
+      VERSION: '{{ default "26.2.4" .CLI_ARGS }}'
     env:
       KERL_BUILD_DOCS: yes
       KERL_CONFIGURE_OPTIONS: --with-odbc={{ .ODBC_PATH }}
       CFLAGS: -I{{ .ODBC_PATH }}/include -O2
       LDFLAGS: -L{{ .ODBC_PATH }}/lib
     cmds:
-      - mise u -g erlang@26.2.4
+      - mise u -g erlang@{{ .VERSION }}
 
   prune:
     cmds:

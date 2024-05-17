@@ -16,6 +16,7 @@ tasks:
       - install:rosetta
       - devbox:pull
     cmds:
+      - task: install:omf
       - task: chezmoi:apply
       - task: install:brew
       - task: brew:bundle
