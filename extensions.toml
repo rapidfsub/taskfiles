@@ -2,6 +2,7 @@ extensions = [
   "a5huynh.vscode-ron",
   "adpyke.vscode-sql-formatter",
   "bierner.markdown-mermaid",
+  "bmalehorn.vscode-fish",
   "bradlc.vscode-tailwindcss",
   "csstools.postcss",
   "dbaeumer.vscode-eslint",
