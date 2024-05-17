@@ -6,11 +6,11 @@
 
 !aerospace/aerospace.toml
 !chezmoi/chezmoi.json
-!fish/**/*
-!mise/**/*
 !karabiner/karabiner.json
 !kitty/kitty.conf
 !linearmouse/linearmouse.json
 
-!git/config
-!git/devall.inc
+!fish/**/*
+!mise/**/*
+!tealdeer/**/*
+!git/**/*

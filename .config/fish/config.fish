@@ -9,6 +9,7 @@ if status is-interactive
     alias ps=procs
     alias smd="export MIX_ENV=dev"
     alias smt="export MIX_ENV=test"
+    alias tl=tldr
 end
 
 set -l __PATH__ $PATH
