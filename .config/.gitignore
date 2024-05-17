@@ -14,6 +14,3 @@
 
 !git/config
 !git/devall.inc
-
-!zsh/.zprofile
-!zsh/.zshrc
