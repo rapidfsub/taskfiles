@@ -22,7 +22,6 @@
     "exercism@latest",
     "flyctl@latest",
     "procs@latest",
-    "fish@latest",
     "tealdeer@latest"
   ],
   "shell": {

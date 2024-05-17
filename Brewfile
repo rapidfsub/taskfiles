@@ -2,6 +2,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "nikitabobko/tap"
 brew "erlang"
+brew "fish"
 cask "aerospace", args: { appdir: "~/Applications", no_quarantine: true }
 cask "aldente", args: { appdir: "~/Applications", no_quarantine: true }
 cask "arc", args: { appdir: "~/Applications", no_quarantine: true }
