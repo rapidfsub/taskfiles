@@ -14,3 +14,6 @@
 !mise/**/*
 !tealdeer/**/*
 !git/**/*
+
+!zsh/.zprofile
+!zsh/.zshrc
