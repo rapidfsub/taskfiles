@@ -34,11 +34,11 @@ tasks:
     watch: true
 
   push:
-    aliases: [p]
+    aliases: [pf]
     deps:
-      - task: git:push
+      - task: git:push-force
         vars:
-          DIR: ~/fireworks/subnote
+          DIR: ~/fireworks/para
 
   auto-commit:
     aliases: [ac]
