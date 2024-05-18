@@ -6,7 +6,7 @@ includes:
   defaults: ./taskfiles/defaults.yml
   devbox: ./taskfiles/devbox.yml
   git: ./taskfiles/git.yml
-  install: ./taskfiles/install.yml
+  setup: ./taskfiles/setup.yml
   mise: ./taskfiles/mise.yml
   vscode: ./taskfiles/vscode.yml
 
@@ -16,9 +16,10 @@ tasks:
       - install:rosetta
       - devbox:pull
     cmds:
-      - task: install:omf
       - task: chezmoi:apply
-      - task: install:brew
+      - task: setup:brew
+      # - task: setup:chsh
+      - task: setup:omf
       - task: brew:bundle
       - task: mise:install
       - task: defaults:import-all
