@@ -27,6 +27,7 @@ extensions = [
   "redhat.vscode-yaml",
   "richie5um2.vscode-sort-json",
   "rust-lang.rust-analyzer",
+  "samuel-pordeus.elixir-test",
   "tamasfe.even-better-toml",
   "waderyan.gitblame",
   "wakatime.vscode-wakatime",
