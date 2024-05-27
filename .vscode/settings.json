@@ -46,5 +46,6 @@
   "redhat.telemetry.enabled": true,
   "terminal.integrated.defaultProfile.osx": "fish",
   "terminal.integrated.scrollback": 10000000,
+  "workbench.activityBar.location": "bottom",
   "workbench.remoteIndicator.showExtensionRecommendations": false
 }
