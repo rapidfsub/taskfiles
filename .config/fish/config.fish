@@ -4,6 +4,7 @@ set -l __PATH__ $PATH
 devbox global shellenv --init-hook --recompute | sed -e 's/; then/;/' | sed -e 's/^fi/end/' | sed -e 's/hash -r//' | source
 # devbox global shellenv --init-hook | source
 set PATH __PATH__:$PATH
+set PATH $HOME/.ghcup/bin:$PATH
 
 if test "$(arch)" = arm64
     /opt/homebrew/bin/brew shellenv | source
