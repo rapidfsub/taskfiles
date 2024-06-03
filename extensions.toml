@@ -31,4 +31,6 @@ extensions = [
   "tamasfe.even-better-toml",
   "waderyan.gitblame",
   "wakatime.vscode-wakatime",
+  # haskell
+  "haskell.haskell",
 ]
