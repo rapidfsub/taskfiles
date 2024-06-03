@@ -22,7 +22,6 @@ cask "logseq", args: { appdir: "~/Applications", no_quarantine: true }
 cask "macs-fan-control", args: { appdir: "~/Applications", no_quarantine: true }
 cask "notion", args: { appdir: "~/Applications", no_quarantine: true }
 cask "obsidian", args: { appdir: "~/Applications", no_quarantine: true }
-cask "ollama", args: { appdir: "~/Applications", no_quarantine: true }
 cask "postgres-unofficial", args: { appdir: "~/Applications", no_quarantine: true }
 cask "rectangle", args: { appdir: "~/Applications", no_quarantine: true }
 cask "setapp", args: { appdir: "~/Applications", no_quarantine: true }
