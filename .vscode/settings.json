@@ -23,6 +23,7 @@
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
   "editor.trimAutoWhitespace": false,
+  "elixir.credo.executePath": "mix",
   "elixirLS.autoInsertRequiredAlias": false,
   "elixirLS.suggestSpecs": false,
   "emmet.includeLanguages": {
@@ -39,6 +40,7 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "git.openRepositoryInParentFolders": "always",
+  "github.copilot.editor.enableAutoCompletions": true,
   "html.format.extraLiners": "",
   "html.format.indentInnerHtml": true,
   "html.format.maxPreserveNewLines": 1,
