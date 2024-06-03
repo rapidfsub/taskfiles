@@ -1,11 +1,11 @@
 version: "3"
 
 tasks:
-  push:
-    aliases: [p]
-    label: "git:push -- {{ .DIR }}"
+  push-force:
+    aliases: [pf]
+    label: "git:push-force -- {{ .DIR }}"
     cmds:
-      - git push
+      - git push --force
     vars:
       DIR: "{{ default .CLI_ARGS .DIR }}"
     dir: "{{ .DIR }}"

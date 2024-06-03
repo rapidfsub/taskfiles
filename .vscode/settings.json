@@ -39,6 +39,7 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "git.openRepositoryInParentFolders": "always",
+  "github.copilot.editor.enableAutoCompletions": true,
   "html.format.extraLiners": "",
   "html.format.indentInnerHtml": true,
   "html.format.maxPreserveNewLines": 1,
@@ -46,5 +47,6 @@
   "redhat.telemetry.enabled": true,
   "terminal.integrated.defaultProfile.osx": "fish",
   "terminal.integrated.scrollback": 10000000,
+  "workbench.activityBar.location": "bottom",
   "workbench.remoteIndicator.showExtensionRecommendations": false
 }
