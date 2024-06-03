@@ -23,7 +23,6 @@
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
   "editor.trimAutoWhitespace": false,
-  "elixir.credo.executePath": "mix",
   "elixirLS.autoInsertRequiredAlias": false,
   "elixirLS.suggestSpecs": false,
   "emmet.includeLanguages": {
