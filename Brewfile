@@ -1,5 +1,4 @@
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
 tap "nikitabobko/tap"
 brew "erlang"
 brew "fish"
