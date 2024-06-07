@@ -13,7 +13,7 @@ includes:
 tasks:
   setup:
     deps:
-      - install:rosetta
+      - setup:rosetta
       - devbox:pull
     cmds:
       - task: chezmoi:apply
