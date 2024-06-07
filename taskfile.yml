@@ -19,8 +19,8 @@ tasks:
       - task: chezmoi:apply
       - task: setup:brew
       # - task: setup:chsh
-      - task: setup:omf
       - task: brew:bundle
+      - task: setup:omf
       - task: mise:install
       - task: defaults:import-all
       - task: defaults:setup
