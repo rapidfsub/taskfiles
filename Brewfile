@@ -1,7 +1,6 @@
 tap "homebrew/bundle"
 tap "nikitabobko/tap"
 brew "erlang"
-brew "fish"
 brew "ghcup"
 cask "aerospace", args: { appdir: "~/Applications", no_quarantine: true }
 cask "aldente", args: { appdir: "~/Applications", no_quarantine: true }

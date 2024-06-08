@@ -1,0 +1,18 @@
+version: "3"
+
+tasks:
+  darwin-switch:
+    aliases: [ds]
+    cmds:
+      - darwin-rebuild switch --flake ~/taskfiles/nix-darwin/.#simple
+
+  garbage-collect:
+    cmds:
+      - nix-env --delete-generations old
+      - nix-store --gc
+      - nix-collect-garbage -d
+
+  purge-home-manager-state:
+    cmds:
+      - rm ~/.local/state/nix/profiles/home-manager*
+      - rm ~/.local/state/home-manager/gcroots/current-home
