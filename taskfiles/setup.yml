@@ -10,6 +10,7 @@ tasks:
       - command -v brew
 
   rosetta:
+    platforms: [darwin/arm64]
     cmds:
       - softwareupdate --install-rosetta --agree-to-license
 
