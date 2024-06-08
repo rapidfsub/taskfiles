@@ -4,7 +4,6 @@ includes:
   brew: ./taskfiles/brew.yml
   chezmoi: ./taskfiles/chezmoi.yml
   defaults: ./taskfiles/defaults.yml
-  devbox: ./taskfiles/devbox.yml
   git: ./taskfiles/git.yml
   setup: ./taskfiles/setup.yml
   mise: ./taskfiles/mise.yml
@@ -15,11 +14,9 @@ tasks:
   setup:
     deps:
       - setup:rosetta
-      - devbox:pull
     cmds:
       - task: chezmoi:apply
       - task: setup:brew
-      # - task: setup:chsh
       - task: brew:bundle
       - task: setup:omf
       - task: mise:install

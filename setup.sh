@@ -1,6 +1,6 @@
 sudo -v
 
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install --no-confirm
-curl -fsSL https://get.jetify.com/devbox | FORCE=1 bash
+nix --extra-experimental-features "nix-command flakes" run nix-darwin -- switch --flake ~/taskfiles/nix-darwin/.#simple
 
-devbox run task setup
+task setup

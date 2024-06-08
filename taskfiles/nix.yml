@@ -1,10 +1,7 @@
 version: "3"
 
 tasks:
-  darwin-install:
-    cmds:
-      - nix --extra-experimental-features "nix-command flakes" run nix-darwin -- switch --flake ~/taskfiles/nix-darwin/.#simple
-
   darwin-switch:
+    aliases: [ds]
     cmds:
       - darwin-rebuild switch --flake ~/taskfiles/nix-darwin/.#simple

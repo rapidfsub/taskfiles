@@ -12,11 +12,7 @@ tasks:
   rosetta:
     platforms: [darwin/arm64]
     cmds:
-      - softwareupdate --install-rosetta --agree-to-license
-
-  chsh:
-    cmds:
-      - sudo chsh -s $(which fish) $(whoami)
+      - softwareupdate --install-rosetta --agree-to-license;
 
   omf:
     cmds:
