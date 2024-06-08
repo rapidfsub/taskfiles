@@ -1,10 +1,5 @@
-fish_add_path /usr/local/bin
+# fish_add_path /usr/local/bin
 fish_add_path ~/.ghcup/bin
-set -l __PATH__ $PATH
-### https://github.com/jetify-com/devbox/issues/1744#issuecomment-2071809825
-devbox global shellenv --init-hook --recompute | sed -e 's/; then/;/' | sed -e 's/^fi/end/' | sed -e 's/hash -r//' | source
-# devbox global shellenv --init-hook | source
-fish_add_path -m __PATH__
 
 if test "$(arch)" = arm64
     /opt/homebrew/bin/brew shellenv | source
