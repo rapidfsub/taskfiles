@@ -69,6 +69,8 @@
 
         # The platform the configuration will be used on.
         nixpkgs.hostPlatform = "x86_64-darwin";
+
+        security.pam.enableSudoTouchIdAuth = true;
       };
     in
     {
