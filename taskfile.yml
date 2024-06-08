@@ -8,6 +8,7 @@ includes:
   git: ./taskfiles/git.yml
   setup: ./taskfiles/setup.yml
   mise: ./taskfiles/mise.yml
+  nix: ./taskfiles/nix.yml
   vscode: ./taskfiles/vscode.yml
 
 tasks:
