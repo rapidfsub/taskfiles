@@ -33,4 +33,6 @@ extensions = [
   "wakatime.vscode-wakatime",
   # haskell
   "haskell.haskell",
+  # nix
+  "jnoortheen.nix-ide",
 ]
