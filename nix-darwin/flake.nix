@@ -28,7 +28,7 @@
           exercism
           eza
           fd
-          fish
+          pkgs.fish
           flyctl
           fop
           fzf
@@ -69,6 +69,7 @@
 
         # The platform the configuration will be used on.
         nixpkgs.hostPlatform = "x86_64-darwin";
+        # nixpkgs.hostPlatform = "aarch64-darwin";
 
         security.pam.enableSudoTouchIdAuth = true;
       };
