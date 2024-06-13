@@ -42,7 +42,7 @@
           rar
           ripgrep
           sd
-          starship
+          pkgs.starship
           tealdeer
           typos
           yq
