@@ -35,6 +35,7 @@
           git-delete-merged-branches
           pkgs.go-task
           htop
+          pkgs.hyperfine
           lazygit
           nixpkgs-fmt
           procs
