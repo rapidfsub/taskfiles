@@ -33,10 +33,9 @@
           fop
           fzf
           git-delete-merged-branches
-          go-task
+          pkgs.go-task
           htop
           lazygit
-          mise
           nixpkgs-fmt
           procs
           rar
@@ -68,8 +67,8 @@
         system.stateVersion = 4;
 
         # The platform the configuration will be used on.
-        nixpkgs.hostPlatform = "x86_64-darwin";
-        # nixpkgs.hostPlatform = "aarch64-darwin";
+        # nixpkgs.hostPlatform = "x86_64-darwin";
+        nixpkgs.hostPlatform = "aarch64-darwin";
 
         security.pam.enableSudoTouchIdAuth = true;
       };

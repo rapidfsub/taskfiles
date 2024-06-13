@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 tap "nikitabobko/tap"
+brew "asdf"
 brew "erlang"
 brew "ghcup"
 cask "aerospace", args: { appdir: "~/Applications", no_quarantine: true }
