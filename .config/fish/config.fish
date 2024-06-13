@@ -7,9 +7,10 @@ else
     /usr/local/bin/brew shellenv | source
 end
 
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
-    alias asdf mise
     alias cat bat
     alias ls eza
     alias ll "ls -al"
@@ -21,6 +22,5 @@ if status is-interactive
 end
 
 direnv hook fish | source
-mise activate fish | source
 starship init fish | source
 zoxide init fish | source
