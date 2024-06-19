@@ -1,29 +1,32 @@
 extensions = [
-  "a5huynh.vscode-ron",
   "adpyke.vscode-sql-formatter",
   "bierner.markdown-mermaid",
-  "bmalehorn.vscode-fish",
-  "bradlc.vscode-tailwindcss",
-  "csstools.postcss",
   "dbaeumer.vscode-eslint",
   "deerawan.vscode-dash",
-  "donjayamanne.githistory",
   "editorconfig.editorconfig",
+  "hoovercj.vscode-power-mode",
+  "mechatroner.rainbow-csv",
+  "redhat.vscode-yaml",
+  "richie5um2.vscode-sort-json",
+  "tamasfe.even-better-toml",
+  "wakatime.vscode-wakatime",
+  # shell
+  "bmalehorn.vscode-fish",
   "foxundermoon.shell-format",
+  # docker
+  "ms-azuretools.vscode-docker",
+  "ms-vscode-remote.remote-containers",
+  # css
+  "bradlc.vscode-tailwindcss",
+  "csstools.postcss",
+  # github
   "github.copilot",
   "github.copilot-chat",
   "github.vscode-github-actions",
-  "hoovercj.vscode-power-mode",
+  # git
+  "donjayamanne.githistory",
   "letmaik.git-tree-compare",
-  "mechatroner.rainbow-csv",
-  "ms-azuretools.vscode-docker",
-  "ms-vscode-remote.remote-containers",
-  "redhat.vscode-yaml",
-  "richie5um2.vscode-sort-json",
-  "rust-lang.rust-analyzer",
-  "tamasfe.even-better-toml",
   "waderyan.gitblame",
-  "wakatime.vscode-wakatime",
   # elixir
   "jakebecker.elixir-ls",
   "jamilabreu.vscode-phoenix-snippets",
@@ -35,4 +38,7 @@ extensions = [
   "haskell.haskell",
   # nix
   "jnoortheen.nix-ide",
+  # rust
+  "a5huynh.vscode-ron",
+  "rust-lang.rust-analyzer",
 ]
