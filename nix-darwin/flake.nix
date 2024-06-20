@@ -9,7 +9,7 @@
 
   outputs = inputs@{ self, nix-darwin, nixpkgs }:
     let
-      inherit (builtins) attrNames elem;
+      inherit (builtins) attrNames elem mapAttrs;
       inherit (nixpkgs.lib) getName;
       pkgx = import nixpkgs {
         system = "x86_64-darwin";
@@ -75,13 +75,9 @@
 
         launchd = {
           user = {
-            agents = {
-              aerospace = {
-                command = "open -a Aerospace.app";
-                serviceConfig = {
-                  RunAtLoad = true;
-                };
-              };
+            agents = mapAttrs (key: agent: agent // { serviceConfig.RunAtLoad = true; }) {
+              aerospace.command = "open -a Aerospace.app";
+              postgres.command = "open -a Postgres.app";
             };
           };
         };
