@@ -72,6 +72,19 @@
         nixpkgs.hostPlatform = "aarch64-darwin";
 
         security.pam.enableSudoTouchIdAuth = true;
+
+        launchd = {
+          user = {
+            agents = {
+              aerospace = {
+                command = "open -a Aerospace.app";
+                serviceConfig = {
+                  RunAtLoad = true;
+                };
+              };
+            };
+          };
+        };
       };
     in
     {
