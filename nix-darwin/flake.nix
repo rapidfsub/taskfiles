@@ -77,6 +77,7 @@
           user = {
             agents = mapAttrs (key: agent: agent // { serviceConfig.RunAtLoad = true; }) {
               aerospace.command = "open -a Aerospace.app";
+              linearMouse.command = "open -a LinearMouse.app";
               postgres.command = "open -a Postgres.app";
             };
           };

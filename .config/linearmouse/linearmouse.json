@@ -4,10 +4,10 @@
     {
       "if" : {
         "device" : {
-          "productID" : "0xb023",
-          "category" : "mouse",
-          "productName" : "MX Master 3",
           "serialNumber" : "DD3C39BACED01F6F",
+          "category" : "mouse",
+          "productID" : "0xb023",
+          "productName" : "MX Master 3",
           "vendorID" : "0x46d"
         }
       },
@@ -18,6 +18,15 @@
       }
     },
     {
+      "if" : {
+        "device" : {
+          "vendorID" : "0x46d",
+          "productName" : "MX Anywhere 3",
+          "serialNumber" : "26076E79C84616DF",
+          "productID" : "0xb025",
+          "category" : "mouse"
+        }
+      },
       "scrolling" : {
         "acceleration" : {
           "vertical" : 1
@@ -25,20 +34,11 @@
         "speed" : {
           "vertical" : 0
         },
-        "reverse" : {
-          "vertical" : true
-        },
         "distance" : {
           "vertical" : "auto"
-        }
-      },
-      "if" : {
-        "device" : {
-          "category" : "mouse",
-          "vendorID" : "0x46d",
-          "serialNumber" : "26076E79C84616DF",
-          "productID" : "0xb025",
-          "productName" : "MX Anywhere 3"
+        },
+        "reverse" : {
+          "vertical" : true
         }
       }
     },
@@ -54,6 +54,9 @@
       "scrolling" : {
         "reverse" : {
           "vertical" : true
+        },
+        "acceleration" : {
+          "vertical" : 1
         }
       }
     }
