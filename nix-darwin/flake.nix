@@ -28,25 +28,26 @@
           exercism
           eza
           fd
-          pkgs.fish
           flyctl
           fop
           fzf
           git-delete-merged-branches
-          pkgs.go-task
           htop
-          pkgs.hyperfine
           lazygit
           nixpkgs-fmt
           procs
           rar
           ripgrep
           sd
-          pkgs.starship
           tealdeer
           typos
           yq
           zoxide
+          pkgs.elixir-ls
+          pkgs.fish
+          pkgs.go-task
+          pkgs.hyperfine
+          pkgs.starship
         ];
 
         # Auto upgrade nix package and the daemon service.
