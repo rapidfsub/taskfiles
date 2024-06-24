@@ -16,6 +16,7 @@ zoxide init fish | source
 if status is-interactive
     # Commands to run in interactive sessions can go here
     alias cat bat
+    alias im "iex --sname n --cookie c -S mix"
     alias ls eza
     alias ll "ls -al"
     alias lg lazygit
