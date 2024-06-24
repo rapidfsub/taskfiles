@@ -43,7 +43,6 @@
           typos
           yq
           zoxide
-          pkgs.elixir-ls
           pkgs.fish
           pkgs.go-task
           pkgs.hyperfine
