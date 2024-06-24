@@ -28,4 +28,3 @@ cask "rectangle", args: { appdir: "~/Applications", no_quarantine: true }
 cask "setapp", args: { appdir: "~/Applications", no_quarantine: true }
 cask "visual-studio-code", args: { appdir: "~/Applications", no_quarantine: true }
 cask "yes24-ebook", args: { appdir: "~/Applications", no_quarantine: true }
-cask "zed", args: { appdir: "~/Applications", no_quarantine: true }
