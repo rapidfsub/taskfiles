@@ -9,6 +9,10 @@ end
 
 source /opt/homebrew/opt/asdf/libexec/asdf.fish
 
+direnv hook fish | source
+starship init fish | source
+zoxide init fish | source
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
     alias cat bat
@@ -19,8 +23,8 @@ if status is-interactive
     alias smd "export MIX_ENV=dev"
     alias smt "export MIX_ENV=test"
     alias tl tldr
-end
 
-direnv hook fish | source
-starship init fish | source
-zoxide init fish | source
+    function cd
+        z $argv
+    end
+end
