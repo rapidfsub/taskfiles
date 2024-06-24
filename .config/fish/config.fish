@@ -14,9 +14,12 @@ starship init fish | source
 zoxide init fish | source
 
 if status is-interactive
+    # phoenix
+    alias im "iex --sname n --cookie c -S mix"
+    alias mps "mix phx.server"
+
     # Commands to run in interactive sessions can go here
     alias cat bat
-    alias im "iex --sname n --cookie c -S mix"
     alias ls eza
     alias ll "ls -al"
     alias lg lazygit
