@@ -17,6 +17,7 @@ if status is-interactive
     # phoenix
     alias im "iex --sname n --cookie c -S mix"
     alias mps "mix phx.server"
+    alias mt "ASSERT_VALUE_ACCEPT_DIFFS=n mix test"
 
     # Commands to run in interactive sessions can go here
     alias cat bat
