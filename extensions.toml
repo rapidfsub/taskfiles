@@ -1,6 +1,5 @@
 extensions = [
   "adpyke.vscode-sql-formatter",
-  "bierner.markdown-mermaid",
   "dbaeumer.vscode-eslint",
   "deerawan.vscode-dash",
   "editorconfig.editorconfig",
@@ -34,6 +33,9 @@ extensions = [
   "phoenix-liveview-snippets.phoenix-liveview-snippets",
   "phoenixframework.phoenix",
   "samuel-pordeus.elixir-test",
+  # markdown
+  "bierner.markdown-mermaid",
+  "unifiedjs.vscode-remark",
   # haskell
   "haskell.haskell",
   # nix
