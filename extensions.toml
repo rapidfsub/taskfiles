@@ -35,7 +35,7 @@ extensions = [
   "samuel-pordeus.elixir-test",
   # markdown
   "bierner.markdown-mermaid",
-  "unifiedjs.vscode-remark",
+  "DavidAnson.vscode-markdownlint",
   # haskell
   "haskell.haskell",
   # nix
