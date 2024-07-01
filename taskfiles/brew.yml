@@ -11,7 +11,7 @@ tasks:
     aliases: [d]
     cmds:
       - brew bundle dump --force --formula --cask --tap --no-lock
-      - 'sd ''^(cask "[^"]+")$'' ''$1, { no_quarantine: true }'' Brewfile'
+      - 'sd ''^(cask "[^"]+")$'' ''$1, args: { no_quarantine: true }'' Brewfile'
 
   install:
     aliases: [i]
