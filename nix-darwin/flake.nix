@@ -25,6 +25,7 @@
           bat
           chezmoi
           direnv
+          dnstop
           exercism
           eza
           fd
