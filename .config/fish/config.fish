@@ -21,6 +21,7 @@ if status is-interactive
 
     # Commands to run in interactive sessions can go here
     alias cat bat
+    alias dig doggo
     alias ls eza
     alias ll "ls -al"
     alias lg lazygit

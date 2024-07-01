@@ -26,6 +26,7 @@
           chezmoi
           direnv
           dnstop
+          doggo
           exercism
           eza
           fd
