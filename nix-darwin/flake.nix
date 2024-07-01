@@ -9,7 +9,7 @@
 
   outputs = inputs@{ self, nix-darwin, nixpkgs }:
     let
-      inherit (builtins) attrNames elem;
+      inherit (builtins) attrNames elem mapAttrs;
       inherit (nixpkgs.lib) getName;
       pkgx = import nixpkgs {
         system = "x86_64-darwin";
@@ -28,25 +28,25 @@
           exercism
           eza
           fd
-          fish
           flyctl
           fop
           fzf
           git-delete-merged-branches
-          go-task
           htop
           lazygit
-          mise
           nixpkgs-fmt
           procs
           rar
           ripgrep
           sd
-          starship
           tealdeer
           typos
           yq
           zoxide
+          pkgs.fish
+          pkgs.go-task
+          pkgs.hyperfine
+          pkgs.starship
         ];
 
         # Auto upgrade nix package and the daemon service.
@@ -68,9 +68,20 @@
         system.stateVersion = 4;
 
         # The platform the configuration will be used on.
-        nixpkgs.hostPlatform = "x86_64-darwin";
+        # nixpkgs.hostPlatform = "x86_64-darwin";
+        nixpkgs.hostPlatform = "aarch64-darwin";
 
         security.pam.enableSudoTouchIdAuth = true;
+
+        launchd = {
+          user = {
+            agents = mapAttrs (key: agent: agent // { serviceConfig.RunAtLoad = true; }) {
+              aerospace.command = "open -a Aerospace.app";
+              linearMouse.command = "open -a LinearMouse.app";
+              postgres.command = "open -a Postgres.app";
+            };
+          };
+        };
       };
     in
     {

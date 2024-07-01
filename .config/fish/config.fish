@@ -7,9 +7,19 @@ else
     /usr/local/bin/brew shellenv | source
 end
 
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+direnv hook fish | source
+starship init fish | source
+zoxide init fish | source
+
 if status is-interactive
+    # phoenix
+    alias im "iex --sname n --cookie c -S mix"
+    alias mps "mix phx.server"
+    alias mt "ASSERT_VALUE_ACCEPT_DIFFS=n mix test"
+
     # Commands to run in interactive sessions can go here
-    alias asdf mise
     alias cat bat
     alias ls eza
     alias ll "ls -al"
@@ -18,9 +28,8 @@ if status is-interactive
     alias smd "export MIX_ENV=dev"
     alias smt "export MIX_ENV=test"
     alias tl tldr
-end
 
-direnv hook fish | source
-mise activate fish | source
-starship init fish | source
-zoxide init fish | source
+    function cd
+        z $argv
+    end
+end

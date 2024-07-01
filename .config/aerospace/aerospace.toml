@@ -179,6 +179,7 @@ alt-shift-semicolon = 'mode service'
 
 ctrl-enter = 'exec-and-forget open -a Kitty.app'
 ctrl-shift-d = 'exec-and-forget open -a Dash.app'
+ctrl-shift-e = 'exec-and-forget open -a Zed.app'
 ctrl-shift-f = 'exec-and-forget open -a Figma.app'
 ctrl-shift-r = 'exec-and-forget open -a TablePlus.app'
 ctrl-shift-s = 'exec-and-forget open -a YES24eBook.app'
@@ -208,6 +209,14 @@ if.app-name-regex-substring = 'dash'
 run = 'move-node-to-workspace D'
 
 [[on-window-detected]]
+if.app-id = 'com.microsoft.VSCode'
+run = 'move-node-to-workspace E'
+
+[[on-window-detected]]
+if.app-id = 'dev.zed.Zed'
+run = 'move-node-to-workspace E'
+
+[[on-window-detected]]
 if.app-id = 'com.figma.Desktop'
 run = 'move-node-to-workspace F'
 
@@ -222,10 +231,6 @@ run = 'move-node-to-workspace S'
 [[on-window-detected]]
 if.app-id = 'net.kovidgoyal.kitty'
 run = 'move-node-to-workspace T'
-
-[[on-window-detected]]
-if.app-id = 'com.microsoft.VSCode'
-run = 'move-node-to-workspace V'
 
 [[on-window-detected]]
 if.app-id = 'company.thebrowser.Browser'

@@ -1,6 +1,7 @@
 version: "3"
 
 includes:
+  asdf: ./taskfiles/asdf.yml
   brew: ./taskfiles/brew.yml
   chezmoi: ./taskfiles/chezmoi.yml
   defaults: ./taskfiles/defaults.yml
